@@ -39,14 +39,14 @@ public final class EmployeeOuterClass {
         getNameBytes();
 
     /**
-     * <code>string empDesignation = 3;</code>
+     * <code>string designation = 3;</code>
      */
-    java.lang.String getEmpDesignation();
+    java.lang.String getDesignation();
     /**
-     * <code>string empDesignation = 3;</code>
+     * <code>string designation = 3;</code>
      */
     com.google.protobuf.ByteString
-        getEmpDesignationBytes();
+        getDesignationBytes();
   }
   /**
    * Protobuf type {@code Employee}
@@ -63,7 +63,7 @@ public final class EmployeeOuterClass {
     private Employee() {
       id_ = "";
       name_ = "";
-      empDesignation_ = "";
+      designation_ = "";
     }
 
     @java.lang.Override
@@ -105,7 +105,7 @@ public final class EmployeeOuterClass {
             case 26: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              empDesignation_ = s;
+              designation_ = s;
               break;
             }
             default: {
@@ -208,34 +208,34 @@ public final class EmployeeOuterClass {
       }
     }
 
-    public static final int EMPDESIGNATION_FIELD_NUMBER = 3;
-    private volatile java.lang.Object empDesignation_;
+    public static final int DESIGNATION_FIELD_NUMBER = 3;
+    private volatile java.lang.Object designation_;
     /**
-     * <code>string empDesignation = 3;</code>
+     * <code>string designation = 3;</code>
      */
-    public java.lang.String getEmpDesignation() {
-      java.lang.Object ref = empDesignation_;
+    public java.lang.String getDesignation() {
+      java.lang.Object ref = designation_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        empDesignation_ = s;
+        designation_ = s;
         return s;
       }
     }
     /**
-     * <code>string empDesignation = 3;</code>
+     * <code>string designation = 3;</code>
      */
     public com.google.protobuf.ByteString
-        getEmpDesignationBytes() {
-      java.lang.Object ref = empDesignation_;
+        getDesignationBytes() {
+      java.lang.Object ref = designation_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        empDesignation_ = b;
+        designation_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -262,8 +262,8 @@ public final class EmployeeOuterClass {
       if (!getNameBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, name_);
       }
-      if (!getEmpDesignationBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, empDesignation_);
+      if (!getDesignationBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, designation_);
       }
       unknownFields.writeTo(output);
     }
@@ -280,8 +280,8 @@ public final class EmployeeOuterClass {
       if (!getNameBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, name_);
       }
-      if (!getEmpDesignationBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, empDesignation_);
+      if (!getDesignationBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, designation_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -303,8 +303,8 @@ public final class EmployeeOuterClass {
           .equals(other.getId());
       result = result && getName()
           .equals(other.getName());
-      result = result && getEmpDesignation()
-          .equals(other.getEmpDesignation());
+      result = result && getDesignation()
+          .equals(other.getDesignation());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -320,8 +320,8 @@ public final class EmployeeOuterClass {
       hash = (53 * hash) + getId().hashCode();
       hash = (37 * hash) + NAME_FIELD_NUMBER;
       hash = (53 * hash) + getName().hashCode();
-      hash = (37 * hash) + EMPDESIGNATION_FIELD_NUMBER;
-      hash = (53 * hash) + getEmpDesignation().hashCode();
+      hash = (37 * hash) + DESIGNATION_FIELD_NUMBER;
+      hash = (53 * hash) + getDesignation().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -459,7 +459,7 @@ public final class EmployeeOuterClass {
 
         name_ = "";
 
-        empDesignation_ = "";
+        designation_ = "";
 
         return this;
       }
@@ -489,7 +489,7 @@ public final class EmployeeOuterClass {
         com.codelate.model.EmployeeOuterClass.Employee result = new com.codelate.model.EmployeeOuterClass.Employee(this);
         result.id_ = id_;
         result.name_ = name_;
-        result.empDesignation_ = empDesignation_;
+        result.designation_ = designation_;
         onBuilt();
         return result;
       }
@@ -546,8 +546,8 @@ public final class EmployeeOuterClass {
           name_ = other.name_;
           onChanged();
         }
-        if (!other.getEmpDesignation().isEmpty()) {
-          empDesignation_ = other.empDesignation_;
+        if (!other.getDesignation().isEmpty()) {
+          designation_ = other.designation_;
           onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -717,71 +717,71 @@ public final class EmployeeOuterClass {
         return this;
       }
 
-      private java.lang.Object empDesignation_ = "";
+      private java.lang.Object designation_ = "";
       /**
-       * <code>string empDesignation = 3;</code>
+       * <code>string designation = 3;</code>
        */
-      public java.lang.String getEmpDesignation() {
-        java.lang.Object ref = empDesignation_;
+      public java.lang.String getDesignation() {
+        java.lang.Object ref = designation_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          empDesignation_ = s;
+          designation_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string empDesignation = 3;</code>
+       * <code>string designation = 3;</code>
        */
       public com.google.protobuf.ByteString
-          getEmpDesignationBytes() {
-        java.lang.Object ref = empDesignation_;
+          getDesignationBytes() {
+        java.lang.Object ref = designation_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          empDesignation_ = b;
+          designation_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string empDesignation = 3;</code>
+       * <code>string designation = 3;</code>
        */
-      public Builder setEmpDesignation(
+      public Builder setDesignation(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        empDesignation_ = value;
+        designation_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string empDesignation = 3;</code>
+       * <code>string designation = 3;</code>
        */
-      public Builder clearEmpDesignation() {
+      public Builder clearDesignation() {
         
-        empDesignation_ = getDefaultInstance().getEmpDesignation();
+        designation_ = getDefaultInstance().getDesignation();
         onChanged();
         return this;
       }
       /**
-       * <code>string empDesignation = 3;</code>
+       * <code>string designation = 3;</code>
        */
-      public Builder setEmpDesignationBytes(
+      public Builder setDesignationBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        empDesignation_ = value;
+        designation_ = value;
         onChanged();
         return this;
       }
@@ -852,9 +852,9 @@ public final class EmployeeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016employee.proto\"<\n\010Employee\022\n\n\002id\030\001 \001(\t" +
-      "\022\014\n\004name\030\002 \001(\t\022\026\n\016empDesignation\030\003 \001(\tB\024" +
-      "\n\022com.codelate.modelb\006proto3"
+      "\n\016employee.proto\"9\n\010Employee\022\n\n\002id\030\001 \001(\t" +
+      "\022\014\n\004name\030\002 \001(\t\022\023\n\013designation\030\003 \001(\tB\024\n\022c" +
+      "om.codelate.modelb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -873,7 +873,7 @@ public final class EmployeeOuterClass {
     internal_static_Employee_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Employee_descriptor,
-        new java.lang.String[] { "Id", "Name", "EmpDesignation", });
+        new java.lang.String[] { "Id", "Name", "Designation", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
