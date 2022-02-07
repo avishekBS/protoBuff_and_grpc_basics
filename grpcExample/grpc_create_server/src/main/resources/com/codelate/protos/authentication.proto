@@ -15,8 +15,7 @@ message LoginRequest {
 
 }
 message APIResponse {
-	int32 id = 1;
-	string name = 2;
-	string response = 3;
+	int32 responseCode = 1;
+	string responseMessage = 2;
 }
 message NoArguments {}
