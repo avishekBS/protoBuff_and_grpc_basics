@@ -14,3 +14,6 @@ grpcExample/grpc_create_server/target/maven-status/*
 grpcExample/grpc_create_server/target/classes/*
 grpcExample/grpc_create_server/target/grpcServer-0.0.1-SNAPSHOT.jar
 grpcExample/grpc_create_server/target/maven-archiver/pom.properties
+grpcExample/grpc_create_client/src/main/java/com/codelate/model/protos/*.java
+grpcExample/grpc_create_client/target/classes/com/codelate/model/protos/*.class
+grpcExample/grpc_create_client/target/*
