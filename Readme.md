@@ -6,3 +6,4 @@
 3) enum --> enum
 4) Lists --> java.util.list
 5) Map --> java.util.Map
+6) nested class
