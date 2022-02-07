@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "com.codelate.model.protos";
+option java_outer_classname = "EmployeeWrapper";
+option java_multiple_files = true;
+message Employee {
+	string id = 1;
+	string name = 2;
+	string designation = 3;
+}

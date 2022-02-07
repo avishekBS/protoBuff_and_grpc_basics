@@ -1,7 +1,0 @@
-syntax = "proto3";
-option java_package = "com.codelate.model";
-message Employee {
-	string id = 1;
-	string name = 2;
-	string designation = 3;
-}
