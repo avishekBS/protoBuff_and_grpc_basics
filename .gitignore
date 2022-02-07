@@ -3,3 +3,14 @@ protoBuffExample/target/*
 protoBuffExample/src/main/java/com/codelate/model/protos/*.java
 protoBuffExample/serialize_Employee
 protoBuffExample/.settings/com.google.eclipse.protobuf.Protobuf.prefs
+grpcExample/grpc_create_server/.classpath
+grpcExample/grpc_create_server/.project
+grpcExample/grpc_create_server/.settings/org.eclipse.core.resources.prefs
+grpcExample/grpc_create_server/.settings/org.eclipse.jdt.core.prefs
+grpcExample/grpc_create_server/.settings/org.eclipse.m2e.core.prefs
+grpcExample/grpc_create_server/target/classes/com/codelate/model/protos/*.class
+grpcExample/grpc_create_server/src/main/java/com/codelate/model/protos/*.java
+grpcExample/grpc_create_server/target/maven-status/*
+grpcExample/grpc_create_server/target/classes/*
+grpcExample/grpc_create_server/target/grpcServer-0.0.1-SNAPSHOT.jar
+grpcExample/grpc_create_server/target/maven-archiver/pom.properties

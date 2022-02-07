@@ -1,0 +1,22 @@
+syntax = "proto3";
+option java_package = "com.codelate.model.protos";
+option java_outer_classname = "AuthenticationWrapper";
+/*option java_multiple_files = true;*/
+
+service Authentication {
+	rpc login(LoginRequest) returns (APIResponse);
+	rpc logout(NoArguments) returns (APIResponse);
+}
+
+message LoginRequest {
+	int32 id = 1;
+	string name = 2;
+	string password = 3;
+
+}
+message APIResponse {
+	int32 id = 1;
+	string name = 2;
+	string response = 3;
+}
+message NoArguments {}
