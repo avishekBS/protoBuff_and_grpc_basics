@@ -1,2 +1,3 @@
 protoBuffExample/target/classes/*
 protoBuffExample/target/*
+protoBuffExample/src/main/java/com/codelate/model/protos/*.java
