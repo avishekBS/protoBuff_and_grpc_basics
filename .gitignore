@@ -2,3 +2,4 @@ protoBuffExample/target/classes/*
 protoBuffExample/target/*
 protoBuffExample/src/main/java/com/codelate/model/protos/*.java
 protoBuffExample/serialize_Employee
+protoBuffExample/.settings/com.google.eclipse.protobuf.Protobuf.prefs

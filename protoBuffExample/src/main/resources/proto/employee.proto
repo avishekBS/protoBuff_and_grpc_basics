@@ -2,8 +2,39 @@ syntax = "proto3";
 option java_package = "com.codelate.model.protos";
 option java_outer_classname = "EmployeeWrapper";
 option java_multiple_files = true;
+
 message Employee {
+
+/*BASIC DATATYPES*/
 	int32 id = 1;
 	string name = 2;
 	string designation = 3;
+	int64 projectId = 4;
+	float fixedSalary = 5;
+	double variableSalary = 6;
+	bool activeEmployee = 7;
+	
+/*ENUM DATATYPES*/
+	enum DEPARTMENT {
+		ADMIN = 0;
+		IT = 1;
+		ACCOUNTS = 2;
+		OPERATIONS = 3; 
+	}
+	DEPARTMENT department = 8;
+	
+/*LIST DATATYPES*/
+	repeated string skills = 9;
+	
+/*MAP DATATYPES*/
+	map <string, int32> assessmentScore = 10;
+
+/*NESTED CLASS DATATYPES*/
+	ProjectDetails projectdetails = 11;
+}
+
+/*DECELARTION FOR NESTED CLASS LINE no 33*/
+message ProjectDetails {
+	string projectName = 1;
+	int32 projectCode = 2;
 }
